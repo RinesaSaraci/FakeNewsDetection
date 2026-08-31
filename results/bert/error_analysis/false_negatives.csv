@@ -1,0 +1,231 @@
+statement,true_label_id,true_label,predicted_label_id,predicted_label,prob_fake,prob_real,confidence,correct,token_length,error_type,length_group
+wisconsin is on pace to double the number of layoffs this year.,0,FAKE,1,REAL,0.1980757,0.80192435,0.80192435,False,16,FAKE_TO_REAL,1-16
+we know that more than half of hillary clintons meetings while she was secretary of state were given to major contributors to the clinton foundation.,0,FAKE,1,REAL,0.47452146,0.52547854,0.52547854,False,29,FAKE_TO_REAL,17-32
+we know there are more democrats in georgia than republicans. we know that for a fact.,0,FAKE,1,REAL,0.3602048,0.63979524,0.63979524,False,20,FAKE_TO_REAL,17-32
+"says 57 percent of federal spending goes to the military and just 1 percent goes to food and agriculture, including food stamps.",0,FAKE,1,REAL,0.14048335,0.8595166,0.8595166,False,26,FAKE_TO_REAL,17-32
+unfortunately we have documented instances where people defecated in the ( statehouse ) building.,0,FAKE,1,REAL,0.24801245,0.7519875,0.7519875,False,20,FAKE_TO_REAL,17-32
+says mitt romney was one of the first national republican leaders to endorse marco rubio.,0,FAKE,1,REAL,0.21109949,0.7889005,0.7889005,False,22,FAKE_TO_REAL,17-32
+its been since 1888 that a senate of a different party than the president in the white house confirmed a supreme court nominee.,0,FAKE,1,REAL,0.32444835,0.6755516,0.6755516,False,26,FAKE_TO_REAL,17-32
+says he won the second debate with hillary clinton in a landslide in every poll.,0,FAKE,1,REAL,0.2553202,0.7446798,0.7446798,False,18,FAKE_TO_REAL,17-32
+"a proposed tax to fund transportation projects would spend $ 90, 000 to take a single vehicle off the road during the morning and afternoon commute.",0,FAKE,1,REAL,0.2148262,0.78517383,0.78517383,False,31,FAKE_TO_REAL,17-32
+says charlie crist voted against raising the minimum wage.,0,FAKE,1,REAL,0.27255073,0.72744924,0.72744924,False,13,FAKE_TO_REAL,1-16
+"last year, out of the 500, 000 ( in ) population growth we had in the state of texas, about 250, 000 of the 500, 000 came to texas... from the other 49 states.",0,FAKE,1,REAL,0.07784947,0.92215055,0.92215055,False,45,FAKE_TO_REAL,33-64
+when undocumented children are picked up at the border and told to appear later in court... 90 percent do not then show up.,0,FAKE,1,REAL,0.33747998,0.66252005,0.66252005,False,31,FAKE_TO_REAL,17-32
+says gov. chris christie cut spending ( by ) $ 1 billion and provided $ 850 million in new education funding.,0,FAKE,1,REAL,0.46607247,0.5339276,0.5339276,False,25,FAKE_TO_REAL,17-32
+sixty percent of the hispanics support the arizona immigration law,0,FAKE,1,REAL,0.22980145,0.7701985,0.7701985,False,13,FAKE_TO_REAL,1-16
+"of the 20 bills [ rep. david ] cicilline has sponsored in his three years in office, not a single one has advanced past the embryonic committee stage.",0,FAKE,1,REAL,0.08327504,0.9167249,0.9167249,False,37,FAKE_TO_REAL,33-64
+"says donald trump has said he loves war, including with nukes.",0,FAKE,1,REAL,0.115367,0.88463306,0.88463306,False,16,FAKE_TO_REAL,1-16
+proximity to high - voltage power lines lowers property values by as much as 30 percent.,0,FAKE,1,REAL,0.15024664,0.8497534,0.8497534,False,19,FAKE_TO_REAL,17-32
+1 percent of americans are millionaires. 47 percent of house reps. are millionaires. 56 percent of senators are millionaires.,0,FAKE,1,REAL,0.017184673,0.9828153,0.9828153,False,29,FAKE_TO_REAL,17-32
+"mitch mcconnell opposed "" legislation to create and protect kentucky jobs... help for the unemployed... health care for kentucky's children, "" and "" fair pay for women. """,0,FAKE,1,REAL,0.33249268,0.6675074,0.6675074,False,40,FAKE_TO_REAL,33-64
+taxpayers subsidize 80 percent of each marta trip,0,FAKE,1,REAL,0.10783257,0.89216745,0.89216745,False,13,FAKE_TO_REAL,1-16
+half of children struck by cars near schools are hit by parents driving children to school.,0,FAKE,1,REAL,0.294566,0.705434,0.705434,False,19,FAKE_TO_REAL,17-32
+"citizens property insurance has over $ 500 billion worth of risk, with less than $ 10 billion worth of surplus.",0,FAKE,1,REAL,0.32530078,0.6746992,0.6746992,False,24,FAKE_TO_REAL,17-32
+"says donald trump said of women, and you can tell them to go f - - - themselves.",0,FAKE,1,REAL,0.44565877,0.5543412,0.5543412,False,22,FAKE_TO_REAL,17-32
+more ( student - athletes ) graduate than the students who arent student - athletes.,0,FAKE,1,REAL,0.056979895,0.9430201,0.9430201,False,19,FAKE_TO_REAL,17-32
+says mitt romney flip - flopped on an assault weapons ban.,0,FAKE,1,REAL,0.06644221,0.9335578,0.9335578,False,15,FAKE_TO_REAL,1-16
+republicans have proposed dozens of ( health care ) solutions designed to help control costs and improve quality.,0,FAKE,1,REAL,0.11415432,0.8858457,0.8858457,False,21,FAKE_TO_REAL,17-32
+about 1 percent of all the gun sellers are responsible for more than half of the guns that are used in crimes.,0,FAKE,1,REAL,0.4953066,0.5046934,0.5046934,False,25,FAKE_TO_REAL,17-32
+austin school district teachers are the lowest paid of any urban texas district and the lowest paid of any surrounding school district.,0,FAKE,1,REAL,0.30958602,0.6904141,0.6904141,False,25,FAKE_TO_REAL,17-32
+says clackamas county has more urban renewal debt than all the other oregon counties combined.,0,FAKE,1,REAL,0.080271475,0.91972846,0.91972846,False,21,FAKE_TO_REAL,17-32
+there is no record of congresswoman betty sutton... ever holding a single in - person town hall meeting open to the general public.,0,FAKE,1,REAL,0.30336234,0.6966377,0.6966377,False,30,FAKE_TO_REAL,17-32
+"mark herring voted to allow sex offenders, including rapists, to serve shorter sentences.",0,FAKE,1,REAL,0.2907768,0.7092232,0.7092232,False,19,FAKE_TO_REAL,17-32
+"we spend in tax loopholes annually $ 1. 1 trillion. thats more than we spend on our defense budget in a year, on medicare or medicaid in a year.",0,FAKE,1,REAL,0.016130896,0.98386914,0.98386914,False,39,FAKE_TO_REAL,33-64
+"insured floridians pay about $ 2, 000 for every hospital stay to cover the cost of the uninsured.",0,FAKE,1,REAL,0.30623645,0.6937636,0.6937636,False,28,FAKE_TO_REAL,17-32
+this would be the largest casino in the united states.,0,FAKE,1,REAL,0.44892782,0.55107224,0.55107224,False,13,FAKE_TO_REAL,1-16
+"says that each year, about 25, 000 american women become pregnant through rape or incest.",0,FAKE,1,REAL,0.18987998,0.81012,0.81012,False,21,FAKE_TO_REAL,17-32
+"bill nelson leased land that he owned for six cows, taking advantage of an agricultural tax loophole to dodge $ 43, 000 in taxes just last year.",0,FAKE,1,REAL,0.098393515,0.9016065,0.9016065,False,33,FAKE_TO_REAL,33-64
+"since the first of the year, 153 businesses at last count had moved out of california to texas.",0,FAKE,1,REAL,0.14047843,0.85952157,0.85952157,False,22,FAKE_TO_REAL,17-32
+"gov. romney himself, with 28 other republican governors, supported policies that would have eliminated the time limits in the welfare reform law and allowed people to stay on welfare forever.",0,FAKE,1,REAL,0.19017486,0.80982506,0.80982506,False,36,FAKE_TO_REAL,33-64
+says rick perry recently said he wanted another ( texas ) business tax.,0,FAKE,1,REAL,0.40112904,0.59887105,0.59887105,False,16,FAKE_TO_REAL,1-16
+"right now, an employer has more of a chance of getting hit by lightning than be prosecuted for hiring an undocumented worker. that has to change.",0,FAKE,1,REAL,0.4520825,0.5479174,0.5479174,False,33,FAKE_TO_REAL,33-64
+wisconsin dropped from second in the country to 41st among states where more than half the students took the act exam.,0,FAKE,1,REAL,0.39602336,0.60397667,0.60397667,False,24,FAKE_TO_REAL,17-32
+... secret documents reveal that iran could obtain a nuclear weapon far sooner than we were told. and tammy duckworth voted yes ( on the iran nuclear deal ).,0,FAKE,1,REAL,0.3675756,0.6324244,0.6324244,False,36,FAKE_TO_REAL,33-64
+one in every three women has an abortion during her lifetime.,0,FAKE,1,REAL,0.4707074,0.52929264,0.52929264,False,14,FAKE_TO_REAL,1-16
+acorn could get up to $ 8. 5 billion more tax dollars despite being under investigation for voter registration fraud in a dozen states.,0,FAKE,1,REAL,0.10187333,0.89812666,0.89812666,False,29,FAKE_TO_REAL,17-32
+"over 10 years, ( extending tax cuts for the wealthy ) would add less to the deficit than obama added with the stimulus in one year.",0,FAKE,1,REAL,0.11709928,0.8829008,0.8829008,False,30,FAKE_TO_REAL,17-32
+gov. rick scott backed the federal shutdown.,0,FAKE,1,REAL,0.3505607,0.6494393,0.6494393,False,12,FAKE_TO_REAL,1-16
+"says in 2003 texas cut $ 10 billion out of the entire budget, yet we put $ 1. 8 billion more into public education. we put $ 800 million more into health and human services.",0,FAKE,1,REAL,0.48595384,0.5140462,0.5140462,False,41,FAKE_TO_REAL,33-64
+wages adjusted for inflation havent risen since the turn of the last century.,0,FAKE,1,REAL,0.26228222,0.73771775,0.73771775,False,17,FAKE_TO_REAL,17-32
+says if you compare the portland metro area to the cdcs statewide cavity rates... the portland metro area would actually rank as having the 15th lowest cavity rate in the u. s.,0,FAKE,1,REAL,0.043820906,0.9561791,0.9561791,False,40,FAKE_TO_REAL,33-64
+"he was offered medical care for his injuries if he would give up military information in return. john mccain said,'no. '",0,FAKE,1,REAL,0.20804894,0.791951,0.791951,False,28,FAKE_TO_REAL,17-32
+saturday night live executive producer lorne michaels could be put in jail under this amendment for making fun of any politician.,0,FAKE,1,REAL,0.31019166,0.6898083,0.6898083,False,25,FAKE_TO_REAL,17-32
+"of the roughly 15 percent of americans who dont have health insurance, half of them made more than $ 50, 000 a year.",0,FAKE,1,REAL,0.042634238,0.95736575,0.95736575,False,29,FAKE_TO_REAL,17-32
+"the united states can immediately tap a domestic energy resource of more than 1. 5 trillion barrels of oil, six times more than saudi arabia.",0,FAKE,1,REAL,0.033071086,0.9669289,0.9669289,False,30,FAKE_TO_REAL,17-32
+"i did very well with young people in ohio, massachusetts, california.",0,FAKE,1,REAL,0.42198184,0.5780181,0.5780181,False,16,FAKE_TO_REAL,1-16
+"mccain "" has opposed stem cell research. """,0,FAKE,1,REAL,0.027646493,0.97235346,0.97235346,False,11,FAKE_TO_REAL,1-16
+we already pay the highest electricity prices in the country here in new england.,0,FAKE,1,REAL,0.038970213,0.96102977,0.96102977,False,17,FAKE_TO_REAL,17-32
+we're going to have more troops ( in afghanistan )... than the russians had.,0,FAKE,1,REAL,0.43057323,0.5694267,0.5694267,False,22,FAKE_TO_REAL,17-32
+"more than 250 ( voter registration ) groups, ranging across the entire political spectrum, have filed with the state and are registering voters right now.",0,FAKE,1,REAL,0.16257352,0.8374265,0.8374265,False,30,FAKE_TO_REAL,17-32
+rhode islands unemployment insurance system is the most expensive such system in the country.,0,FAKE,1,REAL,0.033868413,0.9661316,0.9661316,False,17,FAKE_TO_REAL,17-32
+"the united states spends $ 2. 2 billion on free cell phones, $ 27 million on moroccan pottery classes and pays for the travel expenses for the watermelon queen in alabama.",0,FAKE,1,REAL,0.48184383,0.5181561,0.5181561,False,38,FAKE_TO_REAL,33-64
+the united states is at historic record highs of individuals being apprehended on the border from countries with terrorist ties such as pakistan or afghanistan or syria.,0,FAKE,1,REAL,0.1945643,0.8054357,0.8054357,False,33,FAKE_TO_REAL,33-64
+"onion creeks highest flow rate on a recent night of flooding was 120, 000 cubic feet per second, which is nearly double the average flow rate of niagara falls.",0,FAKE,1,REAL,0.16998583,0.83001417,0.83001417,False,34,FAKE_TO_REAL,33-64
+"as governor of florida, i used a combination of strategies to help reduce heroin use among youth in florida by approximately 50 percent.",0,FAKE,1,REAL,0.27455702,0.725443,0.725443,False,27,FAKE_TO_REAL,17-32
+"says last year 13 million ( health insurance ) rebates went out, in all 50 states. another 8. 5 ( million ) rebates are being sent out this summer, averaging around 100 bucks each.",0,FAKE,1,REAL,0.35482186,0.6451782,0.6451782,False,45,FAKE_TO_REAL,33-64
+"says the estate tax, in many cases, forces family farmers and small businesses owners to sell their holdings.",0,FAKE,1,REAL,0.31082606,0.6891739,0.6891739,False,23,FAKE_TO_REAL,17-32
+"in 2011, alabama and massachusetts passed legislation allowing non - citizens who are legal residents to vote in state and local elections.",0,FAKE,1,REAL,0.2330798,0.76692015,0.76692015,False,26,FAKE_TO_REAL,17-32
+there is a precedent for not nominating someone to the u. s. supreme court in the middle of a presidential election.,0,FAKE,1,REAL,0.36621395,0.63378614,0.63378614,False,27,FAKE_TO_REAL,17-32
+"mccain "" still thinks it's okay when women don't earn equal pay for equal work. """,0,FAKE,1,REAL,0.23201083,0.76798916,0.76798916,False,23,FAKE_TO_REAL,17-32
+says the u. s. federal income tax rate was 0 percent until 1913.,0,FAKE,1,REAL,0.038754713,0.9612453,0.9612453,False,18,FAKE_TO_REAL,17-32
+you had supported john mccain's military strategies pretty adamantly until this race.,0,FAKE,1,REAL,0.05855009,0.94144994,0.94144994,False,18,FAKE_TO_REAL,17-32
+$ 29 is what families on snap ( i. e. food stamps ) have to live on for a week.,0,FAKE,1,REAL,0.25286272,0.7471373,0.7471373,False,25,FAKE_TO_REAL,17-32
+"the medford water commission was fined $ 279, 000 for dumping plain drinking water into a stream.",0,FAKE,1,REAL,0.34491816,0.6550818,0.6550818,False,22,FAKE_TO_REAL,17-32
+a [ bank ] surveillance camera capturing a criminals face and other identifiable traits would certainly discourage robbery attempts and serve as a deterrent to robbers.,0,FAKE,1,REAL,0.303504,0.696496,0.696496,False,30,FAKE_TO_REAL,17-32
+"in the 2012 election, there were more votes cast than registered voters in st. lucie county, and palm beach county had 141 percent turnout.",0,FAKE,1,REAL,0.039798886,0.96020114,0.96020114,False,30,FAKE_TO_REAL,17-32
+"john kasich says he won, despite 12 visits by a president, somewhere between $ 45 ( million ) and $ 50 million ( spent against him, ) 500 paid volunteers in here calling me every name in the book, former presidents, first ladies and god - knows - who - else.",0,FAKE,1,REAL,0.48866183,0.5113382,0.5113382,False,61,FAKE_TO_REAL,33-64
+"when it comes to transportation funds, georgians spend more in taxes and on red tape than they get back from the federal government.",0,FAKE,1,REAL,0.2798087,0.7201913,0.7201913,False,28,FAKE_TO_REAL,17-32
+says mitt romney supports cap and trade.,0,FAKE,1,REAL,0.09909693,0.9009031,0.9009031,False,11,FAKE_TO_REAL,1-16
+"while 9, 000 state employees were added to the states payroll, oregons revenue forecasts dropped by more than $ 4 billion.",0,FAKE,1,REAL,0.10339664,0.8966033,0.8966033,False,28,FAKE_TO_REAL,17-32
+john mccain fought to rein in fannie and freddie... but democrats blocked the reforms.,0,FAKE,1,REAL,0.26703116,0.7329688,0.7329688,False,21,FAKE_TO_REAL,17-32
+"says mccain "" supported george bush's policies 95 percent of the time. """,0,FAKE,1,REAL,0.030480554,0.96951944,0.96951944,False,18,FAKE_TO_REAL,17-32
+the immigration bill has a specific provision that says that secretary napolitano does not have to build any fence if she chooses not to.,0,FAKE,1,REAL,0.27769464,0.72230536,0.72230536,False,29,FAKE_TO_REAL,17-32
+says donald trump publicly invited putin to hack into americans ( emails ).,0,FAKE,1,REAL,0.32297388,0.6770261,0.6770261,False,16,FAKE_TO_REAL,1-16
+the increase in the current state budget was greater than the inflation rate and the rate of population growth in georgia.,0,FAKE,1,REAL,0.1160068,0.88399327,0.88399327,False,24,FAKE_TO_REAL,17-32
+six thousand people have sought addiction treatment through expanded medicaid.,0,FAKE,1,REAL,0.0411452,0.95885473,0.95885473,False,15,FAKE_TO_REAL,1-16
+"of those 850, 000 ( new texas ) jobs, most were public - sector jobs and minimum - wage jobs.",0,FAKE,1,REAL,0.15064949,0.8493505,0.8493505,False,25,FAKE_TO_REAL,17-32
+the problem with raising tax rates on the wealthiest americans is that more than half of them are small business owners.,0,FAKE,1,REAL,0.09563233,0.9043677,0.9043677,False,24,FAKE_TO_REAL,17-32
+about 78 to 81 house democrats are members of the communist party.... its called the congressional progressive caucus.,0,FAKE,1,REAL,0.039324317,0.9606757,0.9606757,False,25,FAKE_TO_REAL,17-32
+a proposal to reduce the deficit involved large tax cuts for the top bracket.,0,FAKE,1,REAL,0.21794271,0.78205734,0.78205734,False,17,FAKE_TO_REAL,17-32
+says mitch mcconnell voted two times against the violence against women act.,0,FAKE,1,REAL,0.097844414,0.9021556,0.9021556,False,15,FAKE_TO_REAL,1-16
+wisconsin law says all recall petition signers must sign in the presence of another person.,0,FAKE,1,REAL,0.19073957,0.8092605,0.8092605,False,19,FAKE_TO_REAL,17-32
+"in just a few years in office, sen. obama has accumulated the most liberal voting record in the senate.",0,FAKE,1,REAL,0.3388773,0.66112274,0.66112274,False,24,FAKE_TO_REAL,17-32
+"based on current trends, 15. 5 million girls will be married in the next 16 years as children.",0,FAKE,1,REAL,0.09509525,0.9049047,0.9049047,False,23,FAKE_TO_REAL,17-32
+david perdue has never voted in a republican primary until his name was on the ballot.,0,FAKE,1,REAL,0.40872994,0.5912701,0.5912701,False,20,FAKE_TO_REAL,17-32
+"if you don't count illegal aliens, people who qualify for other insurance, and people who make more than $ 75, 000 a year, it leaves about 15 million people who are uninsured.",0,FAKE,1,REAL,0.031207861,0.9687921,0.9687921,False,43,FAKE_TO_REAL,33-64
+says jimrenacci has consistently voted for loopholes that encourage outsourcing of our jobs.,0,FAKE,1,REAL,0.24820107,0.75179887,0.75179887,False,22,FAKE_TO_REAL,17-32
+"a small business receiving a federal tax credit "" to provide health care for its employees... would be barred under the stupak amendment from allowing their employees to use... the health care that they offer them for abortion. """,0,FAKE,1,REAL,0.3657153,0.6342847,0.6342847,False,50,FAKE_TO_REAL,33-64
+donald trump says that nato is obsolete and that we need to get rid of nato...,0,FAKE,1,REAL,0.08776331,0.91223663,0.91223663,False,21,FAKE_TO_REAL,17-32
+"a proposed regional transportation tax will last a minimum of 10 years, and has been approved to last longer.",0,FAKE,1,REAL,0.15704757,0.84295243,0.84295243,False,23,FAKE_TO_REAL,17-32
+says our 12 month job increase was the sixth highest in the nation.,0,FAKE,1,REAL,0.41329473,0.58670527,0.58670527,False,16,FAKE_TO_REAL,1-16
+"says i am happy to decline pers so that the county can save over $ 68, 000 over a four year term that would have been paid on my behalf.",0,FAKE,1,REAL,0.12106337,0.8789366,0.8789366,False,35,FAKE_TO_REAL,33-64
+says chris dudley thinks oregons minimum wage is too high.,0,FAKE,1,REAL,0.43715882,0.56284124,0.56284124,False,14,FAKE_TO_REAL,1-16
+over half the people on disability are either anxious or their back hurts.,0,FAKE,1,REAL,0.06466404,0.93533593,0.93533593,False,16,FAKE_TO_REAL,1-16
+says gov. mike pence and rep. mike coffman take the same positions on a number of things... coffman and pence oppose equal rights for lgbt americans.,0,FAKE,1,REAL,0.2687132,0.73128676,0.73128676,False,40,FAKE_TO_REAL,33-64
+"all of floridas four - year state colleges now offer bachelors degrees for only $ 10, 000.",0,FAKE,1,REAL,0.1679222,0.8320778,0.8320778,False,23,FAKE_TO_REAL,17-32
+"federal, state and local governments have subsidized the production of the volt to the tune of estimates between $ 50, 000 and $ 250, 000 per vehicle sold.",0,FAKE,1,REAL,0.21388157,0.7861184,0.7861184,False,38,FAKE_TO_REAL,33-64
+"medicare only has about 50 percent of it paid for by either premiums or payroll taxes, and the rest is deficit spending... or debt spending.",0,FAKE,1,REAL,0.13986103,0.8601389,0.8601389,False,33,FAKE_TO_REAL,33-64
+district 22 includes about 80 % of the district i have represented since 2010. district 20 includes about 20 % of the area i have represented since 2010.,0,FAKE,1,REAL,0.060028482,0.93997157,0.93997157,False,32,FAKE_TO_REAL,17-32
+we now work the longest hours of any people around the world.,0,FAKE,1,REAL,0.42415434,0.57584566,0.57584566,False,15,FAKE_TO_REAL,1-16
+"we haven't built a refinery, i think, in 30 years.",0,FAKE,1,REAL,0.15079036,0.8492096,0.8492096,False,17,FAKE_TO_REAL,17-32
+the republican national convention is a super bowl times four.,0,FAKE,1,REAL,0.026941292,0.97305876,0.97305876,False,13,FAKE_TO_REAL,1-16
+"john mccain "" has threatened extinction for north korea and sung songs about bombing iran. """,0,FAKE,1,REAL,0.1390462,0.8609538,0.8609538,False,19,FAKE_TO_REAL,17-32
+22 countries invaded by the u. s. in 20 years.,0,FAKE,1,REAL,0.053905074,0.9460949,0.9460949,False,15,FAKE_TO_REAL,1-16
+says u. s. senate opponent tommy thompson favors raising taxes on small businesses.,0,FAKE,1,REAL,0.4538145,0.54618543,0.54618543,False,18,FAKE_TO_REAL,17-32
+says state senate candidate monk elmer voted to exceed the ( school district property tax ) spending caps.,0,FAKE,1,REAL,0.17387617,0.8261239,0.8261239,False,21,FAKE_TO_REAL,17-32
+"says texas has so few gas - pump inspectors in the field, the hebs of this state, the brookshires of this state, theyre calibrating their own gas pumps. the ( texas department of agriculture ) just sends them the stickers and they calibrate them.",0,FAKE,1,REAL,0.42410088,0.5758991,0.5758991,False,60,FAKE_TO_REAL,33-64
+senator obama has voted 94 times to either increase your taxes or against tax cuts.,0,FAKE,1,REAL,0.2275069,0.7724931,0.7724931,False,18,FAKE_TO_REAL,17-32
+lorain is the poorest urban school district in the state of ohio.,0,FAKE,1,REAL,0.07176183,0.92823815,0.92823815,False,17,FAKE_TO_REAL,17-32
+narragansett bay waters are getting warmer - - 4 degrees fahrenheit warmer in the winter since the 1960s.,0,FAKE,1,REAL,0.03287241,0.96712756,0.96712756,False,27,FAKE_TO_REAL,17-32
+one in five american households have nobody under the same roof thats got a job.,0,FAKE,1,REAL,0.0215731,0.97842693,0.97842693,False,19,FAKE_TO_REAL,17-32
+only three in 10 young americans under 30 - - 30 percent under 30 - - have full - time work.,0,FAKE,1,REAL,0.36404753,0.6359524,0.6359524,False,24,FAKE_TO_REAL,17-32
+and weve constantly been the lowest unemployed county in the state.,0,FAKE,1,REAL,0.15209986,0.8479001,0.8479001,False,15,FAKE_TO_REAL,1-16
+"under the house republican budget, if these cuts were to be spread out evenly the year after next, nearly 10 million college students would see their financial aid cut by an average of more than $ 1, 000 each.",0,FAKE,1,REAL,0.16050085,0.8394992,0.8394992,False,45,FAKE_TO_REAL,33-64
+"the nonpartisan cbo, congressional budget office, has said that the no. 1 policy decision that brought us to the need to prevent the nation from defaulting on our debt for the first time in history were the bush tax cuts in 2001 and 2003.",0,FAKE,1,REAL,0.3597523,0.6402477,0.6402477,False,53,FAKE_TO_REAL,33-64
+the united states is the only developed country in the world that has not cut its corporate tax rate.,0,FAKE,1,REAL,0.062604226,0.9373958,0.9373958,False,22,FAKE_TO_REAL,17-32
+says donald trump wants to replace obamacare with a single - payer system.,0,FAKE,1,REAL,0.48302937,0.5169706,0.5169706,False,18,FAKE_TO_REAL,17-32
+every ( u. s. supreme court ) nominee since 1875 has received a nomination hearing.,0,FAKE,1,REAL,0.06140774,0.93859226,0.93859226,False,20,FAKE_TO_REAL,17-32
+says he never wanted to raise the debt ceiling.,0,FAKE,1,REAL,0.3908502,0.6091499,0.6091499,False,12,FAKE_TO_REAL,1-16
+virginia ranked near the bottom of the nation 50 years ago in per capita income but is in the top 10 today. it had a very low rate of higher education attainment but is now above the national average.,0,FAKE,1,REAL,0.04076677,0.9592333,0.9592333,False,44,FAKE_TO_REAL,33-64
+says ( clinton ) called president assad a reformer. she called assad a different kind of leader.,0,FAKE,1,REAL,0.34326816,0.65673184,0.65673184,False,23,FAKE_TO_REAL,17-32
+"as a state rep, i was considered the fourth - most conservative in the legislature. states rick - green republican 0 1 1 0 0 a speech 2552. json mostly - true rand paul wants us to pay $ 2, 000 just to get medicare. health - care, medicare, message - machine jack - conway kentucky attorney general kentucky democrat 0 1 0 2 0 a campaign commercial 9353. json mostly - true says hillary clinton opposed an individual mandate and favored an employer mandate back in 1993. health - care, public - health bobby - jindal governor of louisiana louisiana republican 0 1 4 4 0 an op - ed",0,FAKE,1,REAL,0.26204,0.73796,0.73796,False,128,FAKE_TO_REAL,65-128
+georgias hope scholarship is still the richest scholarship program in america.,0,FAKE,1,REAL,0.07506704,0.92493296,0.92493296,False,15,FAKE_TO_REAL,1-16
+were trailing every other state in the midwest in terms of job creation since january of 2011.,0,FAKE,1,REAL,0.08096335,0.9190366,0.9190366,False,20,FAKE_TO_REAL,17-32
+the pope and donald trump and tammy baldwin all agree on eliminating the carried - interest tax break.,0,FAKE,1,REAL,0.41886407,0.5811359,0.5811359,False,21,FAKE_TO_REAL,17-32
+agriculture has always required a significant workforce from abroad.,0,FAKE,1,REAL,0.39731145,0.6026886,0.6026886,False,12,FAKE_TO_REAL,1-16
+says hjm 20 was the only bill not assigned to a house committee.,0,FAKE,1,REAL,0.3363963,0.6636037,0.6636037,False,17,FAKE_TO_REAL,17-32
+theres a loophole where you can sell guns without a background check 40 percent of guns are sold that way at gun shows and over the internet.,0,FAKE,1,REAL,0.48794326,0.5120567,0.5120567,False,32,FAKE_TO_REAL,17-32
+the minimum wage has risen $ 2. 35 in the last two years. thats 31 percent.,0,FAKE,1,REAL,0.42742935,0.5725707,0.5725707,False,22,FAKE_TO_REAL,17-32
+"weve seen 115, 000 jobs created in the american auto industry since gm and chrysler emerged from bankruptcy.",0,FAKE,1,REAL,0.015864827,0.9841352,0.9841352,False,23,FAKE_TO_REAL,17-32
+the music industry is the biggest export from africa after oil and gas.,0,FAKE,1,REAL,0.14849184,0.85150814,0.85150814,False,16,FAKE_TO_REAL,1-16
+congressman joe heck has ( voted ) 62 % of the time with nancy pelosi and the democrats on a variety of important issues.,0,FAKE,1,REAL,0.1646663,0.8353337,0.8353337,False,29,FAKE_TO_REAL,17-32
+"chile ranks third internationally in economic freedom, while the u. s. ranks 17th.",0,FAKE,1,REAL,0.45771715,0.5422828,0.5422828,False,19,FAKE_TO_REAL,17-32
+bill mccollum said tax cuts don't work.,0,FAKE,1,REAL,0.4085229,0.5914771,0.5914771,False,14,FAKE_TO_REAL,1-16
+says his texas election fraud investigations have resulted in 50 convictions.,0,FAKE,1,REAL,0.3865282,0.6134718,0.6134718,False,14,FAKE_TO_REAL,1-16
+miami - dade county is the no. 1 donor county in the state.,0,FAKE,1,REAL,0.18728784,0.8127122,0.8127122,False,17,FAKE_TO_REAL,17-32
+"since president barack obama took office, you have 1, 700 employees just at the department of transportation earning over $ 170, 000.",0,FAKE,1,REAL,0.3459965,0.65400356,0.65400356,False,28,FAKE_TO_REAL,17-32
+"even with recent changes, the average hourly wage at general motors is still $ 75 an hour.",0,FAKE,1,REAL,0.096083954,0.9039161,0.9039161,False,21,FAKE_TO_REAL,17-32
+u. s. house opponent paul ryan supports cutting funding for veterans by 24 percent.,0,FAKE,1,REAL,0.2743178,0.72568226,0.72568226,False,19,FAKE_TO_REAL,17-32
+"congress includes 36 people accused of spousal abuse, 84 arrested for drunk driving in the past year, 71 with terrible creditand more.",0,FAKE,1,REAL,0.351586,0.64841396,0.64841396,False,30,FAKE_TO_REAL,17-32
+says the initial portland plastic bag ban represented only a modest share of total single - use checkout bag use.,0,FAKE,1,REAL,0.26402763,0.7359723,0.7359723,False,24,FAKE_TO_REAL,17-32
+"i remember one of [ curt schillings ] teammates said he painted his sock, the bloody sock.",0,FAKE,1,REAL,0.34111544,0.65888464,0.65888464,False,23,FAKE_TO_REAL,17-32
+not one dime gets added to the deficit because of social security.,0,FAKE,1,REAL,0.11439833,0.8856017,0.8856017,False,15,FAKE_TO_REAL,1-16
+canada sets aside 36 percent of their visas for people with skills they think their country needs. we set aside 6 percent.,0,FAKE,1,REAL,0.033463128,0.9665368,0.9665368,False,26,FAKE_TO_REAL,17-32
+"there are 60, 000 fewer jobs today in this state than we had in 2008.",0,FAKE,1,REAL,0.044787604,0.95521235,0.95521235,False,19,FAKE_TO_REAL,17-32
+"chained cpi would save $ 1 trillion in the second decade off the federal budget debt, a report shows.",0,FAKE,1,REAL,0.25033566,0.74966437,0.74966437,False,23,FAKE_TO_REAL,17-32
+theres more murders with hammers last year than... shotguns and pistols and ak - 47s.,0,FAKE,1,REAL,0.1792745,0.8207255,0.8207255,False,25,FAKE_TO_REAL,17-32
+general motors is the largest corporation in the world again.,0,FAKE,1,REAL,0.30136868,0.6986313,0.6986313,False,13,FAKE_TO_REAL,1-16
+"says they said it was impossible to balance a budget at the same time, with an $ 11 billion deficit and we did it.",0,FAKE,1,REAL,0.36784592,0.63215405,0.63215405,False,28,FAKE_TO_REAL,17-32
+says bruce starr broke the law by letting lobbyists wine and dine him in maui.,0,FAKE,1,REAL,0.47971296,0.52028704,0.52028704,False,20,FAKE_TO_REAL,17-32
+john mccain is right on that one. the line - item veto is the best tool the president has to rein in excessive spending.,0,FAKE,1,REAL,0.2639792,0.7360208,0.7360208,False,28,FAKE_TO_REAL,17-32
+"in 2009, the fbi referred more than 71, 000 cases of people failing background checks when trying to buy a gun to another federal agency, but u. s. attorneys ultimately prosecuted only 77 of them.",0,FAKE,1,REAL,0.16782942,0.83217055,0.83217055,False,43,FAKE_TO_REAL,33-64
+half of all hospitalized seniors are suffering from malnutrition so severe that it either caused their illness or it prevents them from getting better.,0,FAKE,1,REAL,0.039608266,0.96039176,0.96039176,False,30,FAKE_TO_REAL,17-32
+"what i look at every month is how many more new jerseyans are back to work. you have another 9, 900 last month that are back to work and over almost 90, 000 that are back to work now since i became governor.",0,FAKE,1,REAL,0.076358,0.923642,0.923642,False,50,FAKE_TO_REAL,33-64
+"under wisconsin law, anyone who knows anything about a john doe secret criminal investigation cant talk about it.",0,FAKE,1,REAL,0.18978375,0.81021625,0.81021625,False,23,FAKE_TO_REAL,17-32
+"texas high school graduation rate went from 27th in the country in 2002, to second highest in the country in 2013.",0,FAKE,1,REAL,0.24531916,0.7546808,0.7546808,False,25,FAKE_TO_REAL,17-32
+"says daniel webster wants to make divorce illegal, even for abused wives.",0,FAKE,1,REAL,0.45609367,0.5439064,0.5439064,False,16,FAKE_TO_REAL,1-16
+"i'll tell you what i can tell this country : if they want a president who doesn't believe in god, there's probably plenty of choices.",0,FAKE,1,REAL,0.33299837,0.66700155,0.66700155,False,35,FAKE_TO_REAL,33-64
+says that his transportation budget and ohio turnpike plan would make sure we have lower tolls than weve had through the history of the turnpike.,0,FAKE,1,REAL,0.40805587,0.5919441,0.5919441,False,30,FAKE_TO_REAL,17-32
+the war spending bill actually spends more money on the international monetary fund than on the war.,0,FAKE,1,REAL,0.29996753,0.7000325,0.7000325,False,20,FAKE_TO_REAL,17-32
+i never favored cap and trade.,0,FAKE,1,REAL,0.49599892,0.5040011,0.5040011,False,9,FAKE_TO_REAL,1-16
+"every year the state loses 8, 000 - 10, 000 acres of land in bear country.",0,FAKE,1,REAL,0.32671398,0.673286,0.673286,False,21,FAKE_TO_REAL,17-32
+"before medicare, only 51 percent of americans 65 and older had health care coverage and nearly 30 percent lived below the poverty line. today, thanks to medicare... nearly all seniors have coverage and 75 percent fewer struggle in poverty.",0,FAKE,1,REAL,0.37832576,0.6216742,0.6216742,False,48,FAKE_TO_REAL,33-64
+"under common core standards, it takes more than a minute to teach a student how to add nine plus six.",0,FAKE,1,REAL,0.15677294,0.843227,0.843227,False,24,FAKE_TO_REAL,17-32
+rick scott says he supported in - state tuition for dreamers while charlie crist was against it.,0,FAKE,1,REAL,0.2749522,0.7250477,0.7250477,False,22,FAKE_TO_REAL,17-32
+this ban will only apply to oregon commercial fishermen. washington commercial fishermen would still be allowed to use gillnets on the columbia river.,0,FAKE,1,REAL,0.2910924,0.7089076,0.7089076,False,28,FAKE_TO_REAL,17-32
+"after laying off 30, 000 people, carly fiorina said that in retrospect, i would have done them all faster.",0,FAKE,1,REAL,0.36982208,0.6301779,0.6301779,False,29,FAKE_TO_REAL,17-32
+beaverton enjoys the most diverse population ( by percentage of population ) among oregon cities.,0,FAKE,1,REAL,0.2031947,0.7968053,0.7968053,False,19,FAKE_TO_REAL,17-32
+"put simply, less government spending equals more private sector jobs.",0,FAKE,1,REAL,0.41704744,0.58295256,0.58295256,False,14,FAKE_TO_REAL,1-16
+"says bill pascrell voted to eliminate all estate taxes for billionaires, and i voted no.",0,FAKE,1,REAL,0.43317485,0.5668252,0.5668252,False,22,FAKE_TO_REAL,17-32
+florida led the nation in job creation while bush was governor.,0,FAKE,1,REAL,0.49632165,0.5036783,0.5036783,False,14,FAKE_TO_REAL,1-16
+oil production is down 14 percent this year on federal land.,0,FAKE,1,REAL,0.26615137,0.7338487,0.7338487,False,14,FAKE_TO_REAL,1-16
+property tax exemptions can be granted to small businesses that move into milwaukee county.,0,FAKE,1,REAL,0.11219655,0.88780344,0.88780344,False,18,FAKE_TO_REAL,17-32
+says virginia economic development officials decided they didnt want to bid on his companys electric automobile plant.,0,FAKE,1,REAL,0.3506175,0.64938253,0.64938253,False,22,FAKE_TO_REAL,17-32
+"of the more than 1. 3 million temporary mortgage modifications, over half have defaulted.",0,FAKE,1,REAL,0.05779834,0.9422017,0.9422017,False,19,FAKE_TO_REAL,17-32
+"in many instances, ( peoples ) health care costs are more than their mortgage costs or their rent, which, by the way, is a first in american history.",0,FAKE,1,REAL,0.08834425,0.9116558,0.9116558,False,35,FAKE_TO_REAL,33-64
+we have sat scores lower than that of alabama.,0,FAKE,1,REAL,0.028152952,0.9718471,0.9718471,False,12,FAKE_TO_REAL,1-16
+"stimulus tax cuts "" began showing up in paychecks of 4. 8 million indiana households about three months ago. """,0,FAKE,1,REAL,0.214396,0.785604,0.785604,False,26,FAKE_TO_REAL,17-32
+were second only to boston in college students per capita.,0,FAKE,1,REAL,0.09279669,0.9072033,0.9072033,False,13,FAKE_TO_REAL,1-16
+homicides last year increased by 17 percent in americas 50 largest cities. thats the largest increase in 25 years.,0,FAKE,1,REAL,0.11830861,0.88169146,0.88169146,False,25,FAKE_TO_REAL,17-32
+white men account for 69 percent of those arrested for violent crimes.,0,FAKE,1,REAL,0.39002284,0.6099772,0.6099772,False,15,FAKE_TO_REAL,1-16
+we know that tax cuts are remarkably un - stimulative when you compare them with different kinds of government spending.,0,FAKE,1,REAL,0.039787136,0.9602129,0.9602129,False,26,FAKE_TO_REAL,17-32
+"says in fiscal year 2011, the state had a projected $ 11 billion deficit.",0,FAKE,1,REAL,0.14830567,0.8516943,0.8516943,False,18,FAKE_TO_REAL,17-32
+"i wrote to secretary paulson, i wrote to federal reserve chairman bernanke [ in march 2007 ], and told them this is something we have to deal with, and nobody did anything about it.",0,FAKE,1,REAL,0.20490463,0.7950954,0.7950954,False,43,FAKE_TO_REAL,33-64
+"one half of federal spending goes to social security, medicare and medicaid while the other half goes to other programs funded with money borrowed from a foreign land.",0,FAKE,1,REAL,0.13466805,0.8653319,0.8653319,False,34,FAKE_TO_REAL,33-64
+says the american public overwhelmingly opposed democratic - steered health care plan.,0,FAKE,1,REAL,0.0709525,0.9290475,0.9290475,False,15,FAKE_TO_REAL,1-16
+"right now, if rhode island police come across a young person with a gun, they really dont legally have the right to take it away from them.",0,FAKE,1,REAL,0.14804089,0.85195917,0.85195917,False,33,FAKE_TO_REAL,33-64
+"we have trade agreements with 20 countries, and we have trade surpluses with each one of those 20.",0,FAKE,1,REAL,0.049813043,0.95018697,0.95018697,False,23,FAKE_TO_REAL,17-32
+oil companies... currently have 68 - million acres that they're not using.,0,FAKE,1,REAL,0.046514675,0.95348537,0.95348537,False,20,FAKE_TO_REAL,17-32
+oregon school districts are directing 24 percent of their food budgets to purchase local foods. thats the highest percentage in the country.,0,FAKE,1,REAL,0.20426749,0.7957325,0.7957325,False,27,FAKE_TO_REAL,17-32
+every major religion is opposed to same - sex marriage.,0,FAKE,1,REAL,0.07145608,0.9285439,0.9285439,False,13,FAKE_TO_REAL,1-16
+the $ 18. 8 billion in funding for k - 12 education funding is the highest in florida history and includes a record $ 10. 6 billion in state funds.,0,FAKE,1,REAL,0.24693751,0.7530625,0.7530625,False,35,FAKE_TO_REAL,33-64
+if trump had just put his fathers money in a mutual fund... hed have $ 8 billion.,0,FAKE,1,REAL,0.13692652,0.86307347,0.86307347,False,24,FAKE_TO_REAL,17-32
+"john mccain intervened, which helped airbus get that pentagon contract.",0,FAKE,1,REAL,0.11594859,0.8840514,0.8840514,False,14,FAKE_TO_REAL,1-16
+i have never said that i don't wear flag pins or refuse to wear flag pins.,0,FAKE,1,REAL,0.22048807,0.77951187,0.77951187,False,21,FAKE_TO_REAL,17-32
+says history suggests sports will quickly subsume a lot of the attention span of the country in the presidential primary.,0,FAKE,1,REAL,0.030627644,0.96937233,0.96937233,False,24,FAKE_TO_REAL,17-32
+i made a bunch of these promises during the campaign.... weve got about 60 percent done in three years.,0,FAKE,1,REAL,0.320648,0.6793519,0.6793519,False,27,FAKE_TO_REAL,17-32
+some of the wealthiest americans are african - american now.,0,FAKE,1,REAL,0.02233707,0.9776629,0.9776629,False,13,FAKE_TO_REAL,1-16
+theres 400 more people working in health care today in new hampshire than when we passed the budget.,0,FAKE,1,REAL,0.023621889,0.9763781,0.9763781,False,22,FAKE_TO_REAL,17-32
+"in ohio, each year an estimated 1, 000 children become victims of human trafficking, and over 3, 000 more are at risk.",0,FAKE,1,REAL,0.39903852,0.6009615,0.6009615,False,29,FAKE_TO_REAL,17-32
+says measure 3 - 386 will cost a fortune for elections while measure 3 - 388 will cost less.,0,FAKE,1,REAL,0.23654386,0.76345617,0.76345617,False,24,FAKE_TO_REAL,17-32
+our welfare system now consumes 42 percent of our budget.,0,FAKE,1,REAL,0.06176409,0.93823594,0.93823594,False,14,FAKE_TO_REAL,1-16
+this is the first time in the history that weve had the raising of a debt limit also with spending cuts.,0,FAKE,1,REAL,0.46914124,0.53085876,0.53085876,False,25,FAKE_TO_REAL,17-32
+kelly ayotte voted for a budget that had $ 90 billion of cuts to pell grants.,0,FAKE,1,REAL,0.26482987,0.7351701,0.7351701,False,22,FAKE_TO_REAL,17-32
+"barack obama said in 2004 "" that he basically agreed with the way george bush was conducting the war. """,0,FAKE,1,REAL,0.23551233,0.7644877,0.7644877,False,23,FAKE_TO_REAL,17-32
+"about two - thirds of medicaid beneficiaries are children, but they account for one - third of the programs cost, while one - third are elderly, and they account for two - thirds of the cost.",0,FAKE,1,REAL,0.26353255,0.73646754,0.73646754,False,47,FAKE_TO_REAL,33-64
+"says crist campaign website "" has eliminated all references to our republican party. """,0,FAKE,1,REAL,0.1976901,0.8023099,0.8023099,False,18,FAKE_TO_REAL,17-32
+"says paul ryan supports banning all abortions, even in cases of rape or incest.",0,FAKE,1,REAL,0.40724853,0.59275144,0.59275144,False,20,FAKE_TO_REAL,17-32
+"more than 1, 000 american soldiers have lost their lives in afghanistan in the last 27 months. this is more than the combined total of the nine years before.",0,FAKE,1,REAL,0.024621485,0.97537845,0.97537845,False,34,FAKE_TO_REAL,33-64
+"tampa got more ( federal housing ) money because they scored higher on the blight scoring system, so theyve got a much bigger problem than we do.",0,FAKE,1,REAL,0.24031325,0.7596867,0.7596867,False,33,FAKE_TO_REAL,33-64
+capital metro originally said metrorails yearly operating costs would be about $ 2. 5 million. last year... it cost $ 13 million to operate.,0,FAKE,1,REAL,0.25431147,0.7456885,0.7456885,False,34,FAKE_TO_REAL,33-64
+at least a quarter of those apprehended at the border have criminal records.,0,FAKE,1,REAL,0.20115718,0.7988428,0.7988428,False,19,FAKE_TO_REAL,17-32
+"when it comes to jobless workers, mitt romney says he likes to fire people.",0,FAKE,1,REAL,0.16172935,0.83827066,0.83827066,False,20,FAKE_TO_REAL,17-32
+"americans spend 100 - million hours a year filling out these forms ( fafsa ). that is the equivalent of 55, 500 full - time jobs.",0,FAKE,1,REAL,0.03127243,0.9687275,0.9687275,False,33,FAKE_TO_REAL,33-64
+"if you look at the application for a security clearance, i have a clearance that even the president of the united states cannot obtain because of my background.",0,FAKE,1,REAL,0.1741661,0.8258339,0.8258339,False,32,FAKE_TO_REAL,17-32
+"fracturing or horizontally fracturing the shale to open up larger pockets of natural gas... has been used for over 60 years and, as of 2009, over 80, 000 wells have been fracked in ohio.",0,FAKE,1,REAL,0.26014453,0.73985547,0.73985547,False,46,FAKE_TO_REAL,33-64
+"in europe, church attendance rates ( are ) in the single digits because churches are supported by taxes.",0,FAKE,1,REAL,0.28187773,0.71812224,0.71812224,False,22,FAKE_TO_REAL,17-32
+says george lemieux even compared marco rubio to barack obama.,0,FAKE,1,REAL,0.38366187,0.6163382,0.6163382,False,16,FAKE_TO_REAL,1-16
+says his budget provides the highest state funding level in history for education.,0,FAKE,1,REAL,0.21693854,0.7830614,0.7830614,False,16,FAKE_TO_REAL,1-16
+ive been here almost every day.,0,FAKE,1,REAL,0.047201354,0.95279866,0.95279866,False,10,FAKE_TO_REAL,1-16
+says an epa permit languished under strickland but his new epa director got it done in two days.,0,FAKE,1,REAL,0.46233925,0.5376607,0.5376607,False,25,FAKE_TO_REAL,17-32
+says the governor is going around the state talking about [ how ] we should fund an income tax cut that benefits higher income earners and not lower income earners,0,FAKE,1,REAL,0.37508032,0.62491965,0.62491965,False,34,FAKE_TO_REAL,33-64
