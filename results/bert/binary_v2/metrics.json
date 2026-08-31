@@ -1,0 +1,26 @@
+{
+    "model": "bert-base-uncased",
+    "model_path": "models\\bert\\binary_v2",
+    "test_samples": 1267,
+    "device": "cpu",
+    "metrics": {
+        "accuracy": 0.6298342541436464,
+        "precision": 0.4831649831649832,
+        "recall": 0.6391982182628062,
+        "f1": 0.5503355704697986
+    },
+    "confidence": {
+        "correct_count": 798,
+        "incorrect_count": 469,
+        "correct_mean": 0.69684898853302,
+        "incorrect_mean": 0.6494346261024475,
+        "high_confidence_90": 0,
+        "high_confidence_95": 0
+    },
+    "distribution": {
+        "true_fake": 818,
+        "true_real": 449,
+        "predicted_fake": 673,
+        "predicted_real": 594
+    }
+}

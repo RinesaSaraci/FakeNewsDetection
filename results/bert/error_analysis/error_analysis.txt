@@ -1,0 +1,25 @@
+BERT ERROR ANALYSIS REPORT
+============================================================
+Model: bert-base-uncased
+Test samples: 1267
+Correct predictions: 819
+Incorrect predictions: 448
+Accuracy: 0.6464
+
+ERROR DIRECTIONS
+FAKE -> REAL: 230
+REAL -> FAKE: 218
+
+CONFIDENCE
+Mean confidence - correct: 0.8637
+Mean confidence - incorrect: 0.8014
+High-confidence errors >= 0.90: 156
+High-confidence errors >= 0.95: 84
+
+ACCURACY BY TOKEN LENGTH
+              samples  correct  incorrect  accuracy  error_rate
+length_group                                                   
+1-16              268      180         88    0.6716      0.3284
+17-32             759      501        258    0.6601      0.3399
+33-64             237      137        100    0.5781      0.4219
+65-128              3        1          2    0.3333      0.6667
