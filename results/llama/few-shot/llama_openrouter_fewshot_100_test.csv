@@ -1,0 +1,101 @@
+index,statement,true_label,raw_response,prediction,result
+1211,On recess appointments.,FAKE,REAL.,REAL,INCORRECT
+1039,White men account for 69 percent of those arrested for violent crimes.,FAKE,REAL,REAL,INCORRECT
+422,"When these same Republicans - including Mr. Boehner - were in charge, the number of earmarks and pet projects went up, not down.",REAL,REAL,REAL,CORRECT
+1119,There is no clinical evidence that vaccinating healthcare workers protects patients.,FAKE,FAKE,FAKE,CORRECT
+848,"Even among second and third generation Muslims in the United States, theres no real assimilation.",FAKE,REAL.,REAL,INCORRECT
+781,Jane Norton supported the largest tax hike in Colorado history.,FAKE,REAL,REAL,INCORRECT
+23,Marijuana is less toxic than alcohol.,REAL,REAL.,REAL,CORRECT
+405,Im not a conspiracy theorist and I never allow conspiracy theorists on my program.,FAKE,REAL,REAL,INCORRECT
+43,Says bag litter increased after San Francisco banned single-use shopping bags.,FAKE,REAL.,REAL,INCORRECT
+581,"Says the health care reform bill was paid for, in part, by taking money from students and the student loan system.",FAKE,REAL,REAL,INCORRECT
+1176,Democrats are cutting our school funding. Four times in the last 10 years before we came into office.,FAKE,REAL,REAL,INCORRECT
+552,"Last year, we had zero percent growth in GDP in Virginia ...The only states that did worse than us were Alaska and Mississippi.",REAL,REAL,REAL,CORRECT
+1072,Mitt Romney said it was tragic to end the war in Iraq.,FAKE,REAL.,REAL,INCORRECT
+308,"More than 250 (voter registration) groups, ranging across the entire political spectrum, have filed with the state and are registering voters right now.",FAKE,REAL,REAL,INCORRECT
+382,Says she will work to raise the federal minimum wage back to the highest level its ever been $12 an hour in todays dollars.,FAKE,REAL,REAL,INCORRECT
+1164,"About two-thirds of Medicaid beneficiaries are children, but they account for one-third of the programs cost, while one-third are elderly, and they account for two-thirds of the cost.",FAKE,REAL.,REAL,INCORRECT
+490,Halliburton gave Dick Cheney a $34 million payout when he left the company to join the presidential ticket.,REAL,REAL,REAL,CORRECT
+78,"To hear Gov. Christie tell it, everything in New Jersey is going just fine. Well I see another New Jersey with 400,000 unemployed. One of the worst jobless rates in the country. Working and middle class families have seen costs soar, from property taxes to college tuition.",FAKE,REAL.,REAL,INCORRECT
+609,Says Hillary Clinton wants to go to a single-payer plan for health care,FAKE,REAL,REAL,INCORRECT
+1208,"If the General Assembly does not address the states structural deficit, more than 23,000 education professionals will be immediately yanked out of Pennsylvania schools.",FAKE,REAL.,REAL,INCORRECT
+533,Donald Trump says that NATO is obsolete and that we need to get rid of NATO...,FAKE,REAL.,REAL,INCORRECT
+409,"John Kasich says he won, despite 12 visits by a president, somewhere between $45 (million) and $50 million (spent against him,) 500 paid volunteers in here calling me every name in the book, former presidents, first ladies and God-knows-who-else.",FAKE,REAL.,REAL,INCORRECT
+541,Warren Buffett called (Jeff) Greenes scheme financial weapons of mass destruction.,FAKE,REAL.,REAL,INCORRECT
+1099,Say71 percent of doctors say Hillarys health concerns are serious and could be disqualifying.,FAKE,REAL.,REAL,INCORRECT
+626,Says Barack Obamas favorability rating in Israel once clocked in at 4 percent.,FAKE,REAL.,REAL,INCORRECT
+997,The Obama administration is refusing to directly arm the Kurds.,REAL,REAL,REAL,CORRECT
+346,We are giving almost $2 billion of taxpayer money to the junk food and fast food industries every year to make the (childhood obesity) epidemic worse.,FAKE,REAL,REAL,INCORRECT
+1045,"The Great Wall of China, built 2,000 years ago, is 13,000 miles (long).",FAKE,REAL.,REAL,INCORRECT
+908,I never favored cap and trade.,FAKE,REAL,REAL,INCORRECT
+884,"Because of the health care act, The people who have health care and like it in this county are not going to be able to keep what they have.",FAKE,FAKE,FAKE,CORRECT
+1260,I think its seven or eight of the California system of universities dont even teach an American history course. Its not even available to be taught.,FAKE,REAL,REAL,INCORRECT
+424,Heroin .. pours across our southern borders.,REAL,I cannot classify a statement,INVALID,INVALID
+573,"Thanks to the Trans-Pacific Partnership, Vietnam is drafting and presenting unprecedented labor reforms, changing their Constitution to recognize worker organizations in Vietnam for the first time.",FAKE,REAL,REAL,INCORRECT
+532,Elorza wants to teach our public school children about the non-existence of God.,FAKE,REAL.,REAL,INCORRECT
+123,"Neville Chamberlain told the British people: Accept the Nazis. Yes, they will dominate the continent of Europe, but that is not our problem. Lets appease them. Why? Because it cant be done. We cannot possibly stand against them.",FAKE,FAKE,FAKE,CORRECT
+168,Says states mandated tests come from an English company.,REAL,REAL,REAL,CORRECT
+327,Sayvideo shows massive alligator strolling across Florida golf course.,REAL,REAL,REAL,CORRECT
+344,A recall election for Wisconsin governor would cost $7.7 million -- $7.7 million that may already be allocated to merit raises for teachers or health care for the poor or school books for your kids.,FAKE,REAL,REAL,INCORRECT
+493,On ending stop and frisk,FAKE,REAL,REAL,INCORRECT
+1246,Says George LeMieux even compared Marco Rubio to Barack Obama.,FAKE,REAL,REAL,INCORRECT
+615,Says a rather extraordinary amount of non-classroom employees were added by Texas school districts over the last decade.,REAL,REAL.,REAL,CORRECT
+720,"Before I was state treasurer, my Rhode Island business helped create over 1,000 jobs.",REAL,REAL,REAL,CORRECT
+208,"Says At age 76 when you most need it, you are not eligible for cancer treatment under Affordable Care Act.",FAKE,REAL,REAL,INCORRECT
+371,"The CBO says that if you raise the minimum wage to $10.10 an hour, half a million people would lose their jobs.",REAL,FAKE,FAKE,INCORRECT
+534,On implementing a sales tax.,FAKE,REAL,REAL,INCORRECT
+63,I did not play any role in bringing the company to RI as did others in government. I was tasked with handling the legislation affecting the company by my superiors.,FAKE,REAL,REAL,INCORRECT
+1070,Germany is crime-riddled right now because of migration to Europe.,FAKE,REAL.,REAL,INCORRECT
+588,"George Allen voted for budgets that increased the national debt by $16,400 for every second he served in the U.S. Senate.",REAL,REAL,REAL,CORRECT
+932,"Says that during his eight years as Florida governor, we created 1.3 million net new jobs -- more jobs created than Texas.",REAL,REAL.,REAL,CORRECT
+561,Republicans are attempting to remove Barack Obama from Georgias Presidential Ballot in 2012.,FAKE,REAL,REAL,INCORRECT
+925,"Says Kurt Schrader voted to cut $500 billion from Medicare, threatening thousands of Oregon seniors and their access to their current coverage.",FAKE,REAL.,REAL,INCORRECT
+101,"When Atlanta Police Chief George Turner was interim head of the department, overall crime fell 14 percent and violent crime dropped 22.7 percent.",FAKE,REAL,REAL,INCORRECT
+528,The poverty rate amongst women is the worst its been in 17 years and the extreme poverty rate is the worst its ever been.,REAL,REAL,REAL,CORRECT
+952,The amount of money that we put into running our own state legislature is nearly as much as we put into the University of Rhode Island.,FAKE,REAL.,REAL,INCORRECT
+1163,Wisconsin was literally broke when Republicans took office in January 2011.,FAKE,REAL.,REAL,INCORRECT
+1227,Nearly 20% of our residents are born abroad.,REAL,REAL,REAL,CORRECT
+174,Sixteen million jobs were created under Ronald Reagans presidency.,REAL,REAL.,REAL,CORRECT
+991,"Under the DREAM Act, after two years of higher education or military service you are eligible for citizenship. Once a citizen, this paves the way to bring the rest of (your) extended family to the United States.",FAKE,REAL.,REAL,INCORRECT
+51,Hillary Clinton said gun confiscation would be worth considering.,FAKE,REAL.,REAL,INCORRECT
+233,The collective net worth of Americans has taken a $5.5 trillion hit ... mainly due to plummeting home values.,REAL,REAL,REAL,CORRECT
+710,"Bernie Sanders opposesthe Trans-Pacific Partnership, and Hillary Clinton supportsit.",REAL,REAL,REAL,CORRECT
+435,"U.S. Rep. Jim Langevin didn't want a border fence to block illegal immigration ""because he is afraid that someone will get hurt trying to go around the fence.""",FAKE,REAL.,REAL,INCORRECT
+620,The Senate health care bill does not contain limits on medical malpractice lawsuits.,REAL,REAL,REAL,CORRECT
+218,Two million more Latinos are in poverty today than when President Obamatook his oath of office less than eight years ago.,FAKE,REAL.,REAL,INCORRECT
+631,"George Bush ... used a signing statement (on a FEMA bill) to say, 'I don't have to follow that, unless I choose to.'",REAL,REAL,REAL,CORRECT
+367,"McCain ""still thinks it's okay when women don't earn equal pay for equal work.""",FAKE,REAL.,REAL,INCORRECT
+81,Proposition 2 on Novembers Texas ballot does not cost state taxpayers any money.,FAKE,REAL.,REAL,INCORRECT
+76,What the facts say is ...the best scenario for kids is a loving mom and dad.,FAKE,REAL,REAL,INCORRECT
+661,"Vern Buchanan. His old business was caught illegally funneling over $60,000 in campaign donations to Buchanan to influence his election.",REAL,REAL,REAL,CORRECT
+1254,Female buffalo lead the herd.,REAL,REAL,REAL,CORRECT
+543,"Says I am happy to decline PERS so that the County can save over $68,000 over a four year term that would have been paid on my behalf.",FAKE,REAL.,REAL,INCORRECT
+289,"I did very well with young people in Ohio, Massachusetts, California.",FAKE,REAL.,REAL,INCORRECT
+58,ACORN will be a paid partner with the Census Bureau and they will be in charge of going door-to-door and collecting data from the American public.,FAKE,REAL.,REAL,INCORRECT
+309,"Barack Obama got more campaign contributions from Fannie Mae and Freddie Mac ""than any other member of Congress, except for the Democratic chairmen of the committee that oversees them.""",REAL,REAL,REAL,CORRECT
+823,On toll roads.,FAKE,REAL,REAL,INCORRECT
+583,"John McCain ""has threatened extinction for North Korea and sung songs about bombing Iran.""",FAKE,REAL,REAL,INCORRECT
+1080,Says Thomas Jefferson said that government is best which governs least.,FAKE,REAL.,REAL,INCORRECT
+762,"Says U.S. Rep. Ron Kinds stimulus cost taxpayers $278,000 per job.",FAKE,REAL.,REAL,INCORRECT
+49,A salesclerk at Hobby Lobby who needs contraception is not going to get that service through her employers health care plan because her employer doesnt think she should be using contraception.,FAKE,REAL,REAL,INCORRECT
+192,"China has total control, just about, of North Korea.",FAKE,REAL.,REAL,INCORRECT
+886,"Right now in Georgia, nearly one in three leaving our prisons are re-convicted within three years.",REAL,REAL.,REAL,CORRECT
+900,North Carolina has one of the fastest growing populations as well as the fastest growing economy in the country.,REAL,REAL.,REAL,CORRECT
+198,Health care premiums for consumers have doubled since 2001.,REAL,REAL,REAL,CORRECT
+471,"When I withdrew in June of 2008, polls were showing that at least 40 percent of my supporters said, oh, they werent going to support Sen. Obama.",REAL,REAL,REAL,CORRECT
+415,"The White House is won in the swing states, and I am winning the swing states.",FAKE,REAL,REAL,INCORRECT
+363,The House has never failed to pass a budget in the modern era.,REAL,REAL.,REAL,CORRECT
+1173,Says he hasnt changed his view on abortion restrictions.,FAKE,REAL,REAL,INCORRECT
+1004,Republicans tried to block the deficit commission.,FAKE,REAL,REAL,INCORRECT
+1202,Toomey and Trump will ban abortion and punish women who have them.,FAKE,FAKE,FAKE,CORRECT
+767,"Under the White Houses budget proposal, we will not be adding more to the national debt by the middle of the decade.",FAKE,REAL.,REAL,INCORRECT
+785,"New Jerseys governor cut $1.6 billion from public education while handing out $2.1 billion in corporate tax breaks, more than the entire previous decade.",REAL,REAL,REAL,CORRECT
+342,Georgia has the second-highest rate of childhood obesity in the United States.,REAL,REAL.,REAL,CORRECT
+802,Says the initial Portland plastic bag ban represented only a modest share of total single-use checkout bag use.,FAKE,REAL.,REAL,INCORRECT
+987,"Dollar General added 2,500 stores and 20,000 jobs during his four-year tenure as CEO.",REAL,REAL,REAL,CORRECT
+1124,Theres 400 more people working in health care today in New Hampshire than when we passed the budget.,FAKE,REAL.,REAL,INCORRECT
+128,"The federal government reviewed and verified his administrations numbers showing Wisconsin added 23,608 jobs in 2011.",FAKE,REAL,REAL,INCORRECT
+259,"He received ""A"" ratings from ""every conservative organization that gives ratings.""",REAL,REAL,REAL,CORRECT
+413,"There is nothing in the current state public records law that prohibits sensitive or confidential business information from being just that, confidential.",REAL,REAL,REAL,CORRECT
+196,Barack Obama has provided guns to Mexican drug cartels.,FAKE,FAKE,FAKE,CORRECT
+282,Says Ron Johnson gave himself a $10 million sweetheart corporate payout,FAKE,REAL.,REAL,INCORRECT

@@ -5,6 +5,15 @@ venv/
 # Python cache
 __pycache__/
 *.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
+Thumbs.db
 
 # Environment variables
 .env
@@ -18,3 +27,6 @@ data/processed/
 
 # Trained models
 models/
+
+# Generated thesis document (kept local, not tracked)
+docs/*.docx
