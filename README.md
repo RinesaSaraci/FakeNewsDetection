@@ -1,87 +1,319 @@
-# Detektimi i lajmeve të rreme: BERT vs LLaMA 3
+# Fake News Detection on LIAR — BERT vs LLaMA 3
 
-Punim diplome — FIEK, Universiteti i Prishtinës.
-Krahasim eksperimental midis modelit transformer **BERT** (i regjur / fine-tuned)
-dhe modelit të madh gjuhësor **LLaMA 3.2 3B Instruct** (i përdorur me prompting,
-pa fine-tuning) për detektimin binar FAKE/REAL të deklaratave në datasetin
-**LIAR**.
+Bachelor thesis project (FIEK, University of Prishtina).
 
-## Sistemet e krahasuara
+Experimental comparison between a **fine-tuned BERT** encoder and a **prompted
+LLaMA 3.2 3B Instruct** large language model on the binary FAKE/REAL
+classification of statements from the **LIAR** dataset.
 
-| Sistemi | Lloji | Trajnim mbi LIAR |
-|---|---|---|
-| BERT baseline | `bert-base-uncased`, fine-tuned, 3 epoka | po |
-| BERT V2 | i njëjti, fine-tuned me *class weights* | po |
-| LLaMA 3.2 3B zero-shot | `meta-llama/llama-3.2-3b-instruct` (OpenRouter) | jo (prompting) |
-| LLaMA 3.2 3B few-shot | i njëjti model, 6 shembuj në kontekst | jo (prompting) |
+---
 
-Të gjitha vlerësohen mbi të njëjtin test set LIAR (1 267 deklarata: 818 FAKE / 449 REAL).
+## 1. Research question
 
-## Struktura e projektit
+> How effective are BERT and LLaMA 3.2 3B for binary fake-statement detection on
+> LIAR, and how does performance change when **fine-tuned BERT** is compared with
+> **zero-shot** and **few-shot** prompted LLaMA?
+
+The study does not assume one model is better; it uses the experiments to
+characterise the differences, strengths, weaknesses and limitations of each
+approach, using a set of complementary metrics (not accuracy alone).
+
+---
+
+## 2. The four systems
+
+| System | Type | Trained on LIAR? | Model |
+|---|---|---|---|
+| **BERT baseline** | encoder, fine-tuned | yes | `bert-base-uncased` |
+| **BERT V2** | encoder, fine-tuned with class weights | yes | `bert-base-uncased` |
+| **LLaMA 3.2 3B zero-shot** | decoder LLM, prompting only | no | `meta-llama/llama-3.2-3b-instruct` (via OpenRouter) |
+| **LLaMA 3.2 3B few-shot** | decoder LLM, prompting + 6 in-context examples | no | `meta-llama/llama-3.2-3b-instruct` (via OpenRouter) |
+
+All four are evaluated on the **same** LIAR test split: **1,267 statements
+(818 FAKE / 449 REAL)**. The majority-class baseline (always predict FAKE) is
+**0.6456** accuracy — every accuracy number should be read against it.
+
+> Terminology: the LLM used is *LLaMA 3.2 3B Instruct*, a 3-billion-parameter
+> member of the Llama 3 family. It is not the 8B or 70B model.
+
+---
+
+## 3. Dataset
+
+**LIAR** (Wang, 2017) — short political statements fact-checked by PolitiFact,
+each labelled with one of six truthfulness levels. Standard split:
+10,240 train / 1,284 validation / 1,267 test.
+
+### Binary mapping
+
+| Binary target | Original LIAR labels |
+|---|---|
+| **FAKE** | `pants-fire`, `false`, `barely-true`, `half-true` |
+| **REAL** | `mostly-true`, `true` |
+
+`half-true` is on the **FAKE** side. This mapping is applied in
+`prepare_dataset.py` / `label_analysis.py` and is verified against the processed
+CSVs.
+
+### Preprocessing
+
+1. `prepare_dataset.py` — reads the raw `.tsv` files, applies the binary and
+   three-class mappings, writes CSVs to `data/processed/{binary,three_class}/`.
+2. `check_duplicates.py` — analyses duplicate / conflicting statements; the
+   binary train split is reduced from 10,240 to **10,220** rows. Validation and
+   test are left unchanged.
+3. `bert_scripts/analyze_tokenization.py` — WordPiece length statistics
+   (median 22 tokens, 95th percentile 42) → `MAX_LENGTH = 128` chosen.
+4. `bert_scripts/prepare_bert_dataset.py` — tokenises with the
+   `bert-base-uncased` tokenizer (`padding="max_length"`, `max_length=128`) and
+   saves Hugging Face **Arrow** datasets to `data/processed/bert/binary/`.
+5. `validate_processed_dataset.py` — sanity checks on the processed data.
+
+`data/` is **git-ignored** (raw LIAR and all processed artefacts are regenerated
+by the scripts above).
+
+---
+
+## 4. How the training was done
+
+### BERT baseline — `train_bert.py`
+
+| Setting | Value |
+|---|---|
+| Base model | `bert-base-uncased` (`AutoModelForSequenceClassification`, `num_labels=2`) |
+| Input | tokenised Arrow datasets from `data/processed/bert/binary/` |
+| Epochs | 3 |
+| Learning rate | 2e-5 |
+| Batch size | 8 (train and eval) |
+| Weight decay | 0.01 |
+| Max sequence length | 128 |
+| Seed | 42 |
+| Device | CPU |
+| Checkpointing | `save_strategy="epoch"`, `save_total_limit=2` |
+
+Trained with the Hugging Face `Trainer`. After training it is evaluated on the
+test split and the final model is exported.
+
+- **Final model** → `models/bert/binary/final/`
+- **Epoch checkpoints** → `models/bert/binary/checkpoint-*`
+- **Test metrics** → `results/bert/binary/` (`classification_report.txt`,
+  `confusion_matrix.png`, `logits.npy`, `predicted_labels.npy`,
+  `true_labels.npy`)
+
+### BERT V2 — `train_bert_v2.py`
+
+Same data and hyper-parameters as the baseline, but a custom
+weighted-loss `Trainer` is used. Class weights are computed from the training
+label distribution (FAKE 6,587 / REAL 3,633) as `n / (2 · n_class)`:
 
 ```
-data/
-  raw/liar_dataset/         # LIAR origjinal (.tsv) — i gitignoruar
-  processed/                # datasete binare + tri-klasëshe, tokenizimi BERT — i gitignoruar
-bert_scripts/               # përgatitja, tokenizimi, regjimi dhe vlerësimi i BERT
-  prepare_bert_dataset.py, analyze_tokenization.py, evaluate_bert.py,
-  analyze_bert_errors.py, analyze_bert_original_labels.py, test_bert.py
-prepare_dataset.py          # përpunimi paraprak i LIAR
-check_duplicates.py         # duplikatet / deklaratat konfliktuoze
-label_analysis.py           # analiza e etiketave + hartimi binar
-train_bert.py               # regjimi i BERT baseline
-train_bert_v2.py            # regjimi i BERT V2 (class weights)
-evaluate_bert_v2.py         # vlerësimi i BERT V2
-validate_processed_dataset.py
-llama_openrouter_zeroshot_full.py   # LLaMA zero-shot mbi test set-in e plotë
-llama_fewshot_full.py               # LLaMA few-shot mbi test set-in e plotë
-test_llama_zeroshot_small.py, test_llama_zeroshot_100.py,
-test_llama_fewshot_100.py, test_openrouter.py   # eksperimente paraprake / smoke tests
+FAKE = 0.7758   REAL = 1.4066
+```
+
+so errors on the minority REAL class cost more during training.
+
+- **Final model** → `models/bert/binary_v2/`
+- **Checkpoints** → `models/bert/binary/v2/checkpoint-*`
+- **Evaluation** → `results/bert/binary_v2/` (`metrics.json`,
+  `evaluation_report.txt`, `all_predictions.csv`, `confusion_matrix.csv`,
+  `misclassified.csv`, `high_confidence_errors.csv`, `plots/`)
+
+`models/` is **git-ignored** (large; regenerated by the training scripts).
+
+### BERT post-training analysis
+
+| Script | Output |
+|---|---|
+| `bert_scripts/evaluate_bert.py` | re-evaluates the saved baseline model |
+| `bert_scripts/analyze_bert_errors.py` | `results/bert/error_analysis/` — `error_analysis.txt`, `all_predictions.csv`, `false_positives.csv`, `false_negatives.csv`, `misclassified.csv`, `high_confidence_errors.csv`, `low_confidence_errors.csv`, `plots/` |
+| `bert_scripts/analyze_bert_original_labels.py` | `results/bert/original_labels/` — per-six-way-label performance / confidence / error-rate CSVs + `plots/` |
+| `evaluate_bert_v2.py` | `results/bert/binary_v2/` (see above) |
+
+### LLaMA 3.2 3B — `llama_openrouter_zeroshot_full.py`, `llama_fewshot_full.py`
+
+The model is **not** fine-tuned. It is called through the **OpenRouter** API
+(OpenAI-compatible endpoint) with:
+
+| Setting | Value |
+|---|---|
+| Model id | `meta-llama/llama-3.2-3b-instruct` |
+| Temperature | 0 (deterministic) |
+| `max_tokens` | 10 |
+| Input | `data/processed/binary/test.csv` (1,267 statements) |
+| Output parsing | regex that extracts `FAKE` / `REAL` from the reply |
+
+- **Zero-shot**: a system prompt defines FAKE/REAL and asks for a one-word answer.
+- **Few-shot**: the same, plus **6 in-context examples** (3 FAKE + 3 REAL) sampled
+  from the training split with `random_state=42`; the examples used are saved to
+  `results/llama/few-shot/llama_openrouter_fewshot_examples.csv`.
+
+Requires a `.env` file with `OPEN_ROUTER_API_KEY=...`.
+
+Preliminary / smoke-test scripts (small and 100-statement runs used during
+development): `test_openrouter.py`, `test_llama_zeroshot_small.py`,
+`test_llama_zeroshot_100.py`, `test_llama_fewshot_100.py`.
+
+Outputs (per-statement prediction CSVs):
+
+- `results/llama/zero-shot/llama_openrouter_zeroshot_{small,100,full}_test.csv`
+- `results/llama/few-shot/llama_openrouter_fewshot_{100,full}_test.csv`
+
+### Comparative analysis — `analysis/build_comparison.py`
+
+Loads the four per-statement prediction files, aligns them **row-by-row** against
+`data/processed/binary/test.csv` and the raw LIAR `test.tsv` (alignment is
+asserted), then computes every comparison metric and figure.
+
+Outputs → **`results/comparison/`**:
+
+| File | Content |
+|---|---|
+| `metrics_overall.csv` | accuracy, balanced accuracy, macro/weighted P/R/F1, MCC per model |
+| `metrics_per_class.csv` | precision / recall / F1 / support for FAKE and REAL per model |
+| `confusion_matrices.csv` / `.txt` | 2×2 confusion matrix per model |
+| `error_directions.csv` | FAKE→REAL vs REAL→FAKE counts per model |
+| `performance_by_original_label.csv` | accuracy on each of the 6 LIAR levels, per model |
+| `accuracy_by_token_length.csv` | accuracy per BERT-token length bucket, per model |
+| `mcnemar_tests.csv` | pairwise McNemar test + Cohen's κ for all model pairs |
+| `confidence_summary.csv` | BERT confidence stats (LLaMA has no usable logprobs) |
+| `predictions_merged.csv` | one row per test statement with every model's prediction + BERT probabilities |
+| `summary.json` | headline numbers |
+| `plots/` | `accuracy_comparison.png`, `f1_per_class.png`, `macro_weighted_f1.png`, `confusion_matrix_grid.png`, `accuracy_by_original_label.png`, `bert_confidence_distributions.png` |
+
+`notebooks/final_comparison_analysis.ipynb` consolidates all of the above with
+narrative interpretation and the statistical tests.
+
+---
+
+## 5. Repository layout
+
+```
+data/                                  # git-ignored (regenerated by the scripts)
+  raw/liar_dataset/                     # original LIAR .tsv files
+  processed/binary/  processed/three_class/     # mapped CSVs
+  processed/bert/binary/               # tokenised Arrow datasets for BERT
+
+prepare_dataset.py                     # raw .tsv -> processed CSVs (binary + 3-class)
+check_duplicates.py                    # duplicate / conflicting statements
+label_analysis.py                      # label distribution + binary mapping
+validate_processed_dataset.py          # sanity checks
+
+bert_scripts/
+  analyze_tokenization.py              # WordPiece length stats -> MAX_LENGTH=128
+  prepare_bert_dataset.py              # tokenise -> data/processed/bert/binary/
+  evaluate_bert.py                     # evaluate saved baseline model
+  analyze_bert_errors.py              # results/bert/error_analysis/
+  analyze_bert_original_labels.py      # results/bert/original_labels/
+  test_bert.py
+
+train_bert.py                          # BERT baseline fine-tuning
+train_bert_v2.py                       # BERT V2 fine-tuning (class weights)
+evaluate_bert_v2.py                    # BERT V2 evaluation
+
+llama_openrouter_zeroshot_full.py      # LLaMA zero-shot, full test set
+llama_fewshot_full.py                  # LLaMA few-shot, full test set
+test_openrouter.py                     # API smoke test
+test_llama_zeroshot_small.py
+test_llama_zeroshot_100.py             # preliminary runs on subsets
+test_llama_fewshot_100.py
+
 analysis/
-  build_comparison.py       # bashkon parashikimet e 4 modeleve → results/comparison/
+  build_comparison.py                  # all four models -> results/comparison/
+
 notebooks/
-  final_comparison_analysis.ipynb   # analiza krahasuese e konsoliduar (metrika, figura, McNemar)
+  final_comparison_analysis.ipynb      # consolidated comparative analysis
+
 results/
-  bert/                     # metrika, matrica, analizë gabimesh/confidence për BERT
-  llama/                    # parashikimet e LLaMA (zero-shot / few-shot, CSV)
-  comparison/               # tabela, figura dhe parashikime të bashkuara për të 4 sistemet
-models/                     # checkpoint-et e BERT — i gitignoruar
+  bert/binary/          bert/binary_v2/
+  bert/error_analysis/  bert/original_labels/
+  llama/zero-shot/      llama/few-shot/
+  comparison/           # + comparison/plots/
+
+models/                                # git-ignored (BERT checkpoints + final models)
+requirements.txt
+.env                                   # git-ignored — OPEN_ROUTER_API_KEY
 ```
 
-## Riprodhimi
+---
 
-Kërkohet Python 3 me paketat në `requirements.txt`.
-Për thirrjet e LLaMA-s duhet një skedar `.env` me `OPEN_ROUTER_API_KEY=...`.
+## 6. Setup
 
 ```bash
-# BERT (nga bert_scripts/ dhe skriptet në rrënjë)
+python -m venv .venv
+# Windows:
+.venv\Scripts\activate
+# Linux/macOS:
+source .venv/bin/activate
+
+pip install -r requirements.txt
+
+# for the LLaMA experiments:
+echo OPEN_ROUTER_API_KEY=your_key_here > .env
+```
+
+---
+
+## 7. Reproduce end to end
+
+```bash
+# 1. Data
 python prepare_dataset.py
+python check_duplicates.py
+python bert_scripts/analyze_tokenization.py
 python bert_scripts/prepare_bert_dataset.py
-python train_bert.py
-python train_bert_v2.py
+python validate_processed_dataset.py
+
+# 2. BERT training
+python train_bert.py                       # baseline  -> models/bert/binary/final/
+python train_bert_v2.py                    # V2        -> models/bert/binary_v2/
+
+# 3. BERT evaluation + analysis
 python bert_scripts/evaluate_bert.py
+python bert_scripts/analyze_bert_errors.py
+python bert_scripts/analyze_bert_original_labels.py
 python evaluate_bert_v2.py
 
-# LLaMA (kërkon .env me OPEN_ROUTER_API_KEY)
+# 4. LLaMA (needs .env with OPEN_ROUTER_API_KEY)
 python llama_openrouter_zeroshot_full.py
 python llama_fewshot_full.py
 
-# Analiza krahasuese (metrika + figura + McNemar → results/comparison/)
-python analysis/build_comparison.py
-python -m nbconvert --to notebook --execute --inplace notebooks/final_comparison_analysis.ipynb
+# 5. Comparative analysis
+python analysis/build_comparison.py        # -> results/comparison/
+python -m nbconvert --to notebook --execute --inplace \
+       notebooks/final_comparison_analysis.ipynb
 ```
 
-## Rezultatet kryesore
+---
 
-| Model | Saktësia | Makro F1 | MCC | FAKE recall | REAL recall |
-|---|---|---|---|---|---|
-| Baseline klasë-shumicë | 0.646 | — | 0.00 | — | — |
-| BERT baseline | 0.646 | 0.616 | 0.232 | 0.72 | 0.51 |
-| BERT V2 | 0.630 | 0.618 | 0.253 | 0.62 | 0.64 |
-| LLaMA 3.2 3B zero-shot | 0.462 | 0.443 | 0.159 | 0.22 | 0.91 |
-| LLaMA 3.2 3B few-shot | 0.358 | 0.269 | 0.033 | 0.01 | 1.00 |
+## 8. Key results (test set, 1,267 statements)
 
-BERT-i i regjur e tejkalon LLaMA-n e nxitur në mënyrë statistikisht domethënëse
-(McNemar p < 0.0001). Dallimi BERT baseline vs V2 nuk është domethënës (p = 0.21).
-Few-shot prompting-u e degradoi LLaMA-n (kolaps në klasën REAL). Detajet e plota në
-`notebooks/final_comparison_analysis.ipynb` dhe `results/comparison/`.
+| System | Accuracy | Balanced acc. | Macro F1 | MCC | FAKE recall | REAL recall |
+|---|---|---|---|---|---|---|
+| Majority-class baseline | 0.646 | 0.500 | — | 0.000 | — | — |
+| **BERT baseline** | 0.646 | 0.617 | 0.616 | 0.232 | 0.72 | 0.51 |
+| **BERT V2** | 0.630 | 0.632 | 0.618 | 0.253 | 0.62 | 0.64 |
+| LLaMA 3.2 3B zero-shot | 0.462 | 0.563 | 0.443 | 0.159 | 0.22 | 0.91 |
+| LLaMA 3.2 3B few-shot | 0.358 | 0.503 | 0.269 | 0.033 | 0.01 | 1.00 |
+
+- Fine-tuned BERT significantly outperforms prompted LLaMA (McNemar
+  p < 0.0001 for every BERT-vs-LLaMA pair).
+- BERT baseline vs BERT V2: accuracy difference **not** significant (p = 0.21);
+  V2 is more balanced across classes and better calibrated (0 errors at
+  confidence ≥ 0.90, vs 156 for the baseline).
+- Few-shot prompting **degraded** LLaMA — it collapsed to predicting REAL for
+  1,260 of 1,267 statements.
+- Hardest LIAR levels for every system: `half-true`, `mostly-true`, `true`.
+
+Full details: `notebooks/final_comparison_analysis.ipynb` and
+`results/comparison/`.
+
+---
+
+## 9. Notes and limitations
+
+- Single test split, single seed per model; no cross-validation.
+- LLaMA is evaluated only at 3B and only through one API provider; larger Llama 3
+  models are not covered.
+- LLaMA confidence could not be measured — the serving providers do not return
+  usable token log-probabilities — so the calibration comparison is BERT-only.
+- Prompt wording was not tuned.
