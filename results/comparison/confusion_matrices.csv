@@ -1,0 +1,5 @@
+model,true_FAKE_pred_FAKE,true_FAKE_pred_REAL,true_REAL_pred_FAKE,true_REAL_pred_REAL
+BERT baseline,588,230,218,231
+BERT V2,511,307,162,287
+LLaMA 3.2 3B zero-shot,177,641,41,408
+LLaMA 3.2 3B few-shot,6,812,1,448

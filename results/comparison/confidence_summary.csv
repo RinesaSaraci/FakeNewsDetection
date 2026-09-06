@@ -1,0 +1,5 @@
+model,confidence_available,correct_mean,correct_median,incorrect_mean,incorrect_median,high_conf_errors_ge_0.90,high_conf_errors_ge_0.95
+BERT baseline,True,0.863701984029304,0.9138407,0.8014041543080358,0.8259789,156.0,84.0
+BERT V2,True,0.6968490134711778,0.70318291,0.6494346891257995,0.642804,0.0,0.0
+LLaMA 3.2 3B zero-shot,False,,,,,,
+LLaMA 3.2 3B few-shot,False,,,,,,

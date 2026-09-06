@@ -1,0 +1,19 @@
+BERT baseline
+                 pred_FAKE  pred_REAL
+  true_FAKE            588        230
+  true_REAL            218        231
+
+BERT V2
+                 pred_FAKE  pred_REAL
+  true_FAKE            511        307
+  true_REAL            162        287
+
+LLaMA 3.2 3B zero-shot
+                 pred_FAKE  pred_REAL
+  true_FAKE            177        641
+  true_REAL             41        408
+
+LLaMA 3.2 3B few-shot
+                 pred_FAKE  pred_REAL
+  true_FAKE              6        812
+  true_REAL              1        448
