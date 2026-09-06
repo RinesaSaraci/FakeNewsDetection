@@ -1,0 +1,21 @@
+index,statement,true_label,prediction,result
+1211,On recess appointments.,FAKE,REAL,INCORRECT
+1039,White men account for 69 percent of those arrested for violent crimes.,FAKE,REAL,INCORRECT
+422,"When these same Republicans - including Mr. Boehner - were in charge, the number of earmarks and pet projects went up, not down.",REAL,REAL,CORRECT
+1119,There is no clinical evidence that vaccinating healthcare workers protects patients.,FAKE,REAL,INCORRECT
+848,"Even among second and third generation Muslims in the United States, theres no real assimilation.",FAKE,REAL,INCORRECT
+781,Jane Norton supported the largest tax hike in Colorado history.,FAKE,REAL,INCORRECT
+23,Marijuana is less toxic than alcohol.,REAL,REAL,CORRECT
+405,Im not a conspiracy theorist and I never allow conspiracy theorists on my program.,FAKE,REAL,INCORRECT
+43,Says bag litter increased after San Francisco banned single-use shopping bags.,FAKE,REAL,INCORRECT
+581,"Says the health care reform bill was paid for, in part, by taking money from students and the student loan system.",FAKE,REAL,INCORRECT
+1176,Democrats are cutting our school funding. Four times in the last 10 years before we came into office.,FAKE,REAL,INCORRECT
+552,"Last year, we had zero percent growth in GDP in Virginia ...The only states that did worse than us were Alaska and Mississippi.",REAL,REAL,CORRECT
+1072,Mitt Romney said it was tragic to end the war in Iraq.,FAKE,REAL,INCORRECT
+308,"More than 250 (voter registration) groups, ranging across the entire political spectrum, have filed with the state and are registering voters right now.",FAKE,REAL,INCORRECT
+382,Says she will work to raise the federal minimum wage back to the highest level its ever been $12 an hour in todays dollars.,FAKE,REAL,INCORRECT
+1164,"About two-thirds of Medicaid beneficiaries are children, but they account for one-third of the programs cost, while one-third are elderly, and they account for two-thirds of the cost.",FAKE,REAL,INCORRECT
+490,Halliburton gave Dick Cheney a $34 million payout when he left the company to join the presidential ticket.,REAL,REAL,CORRECT
+78,"To hear Gov. Christie tell it, everything in New Jersey is going just fine. Well I see another New Jersey with 400,000 unemployed. One of the worst jobless rates in the country. Working and middle class families have seen costs soar, from property taxes to college tuition.",FAKE,REAL,INCORRECT
+609,Says Hillary Clinton wants to go to a single-payer plan for health care,FAKE,REAL,INCORRECT
+1208,"If the General Assembly does not address the states structural deficit, more than 23,000 education professionals will be immediately yanked out of Pennsylvania schools.",FAKE,FAKE,CORRECT

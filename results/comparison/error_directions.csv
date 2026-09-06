@@ -1,0 +1,5 @@
+model,fake_to_real,real_to_fake,total_errors,error_rate
+BERT baseline,230,218,448,0.35359116022099446
+BERT V2,307,162,469,0.3701657458563536
+LLaMA 3.2 3B zero-shot,641,41,682,0.5382794001578532
+LLaMA 3.2 3B few-shot,812,1,813,0.6416732438831886
